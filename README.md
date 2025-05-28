@@ -109,16 +109,19 @@ Consulta em tempo real o **clima atual** (temperatura e condição climática po
    - Condição climática
    - Data/hora atual
 
-**Exemplo de resposta com enriquecimento usando Open-Meteo:**
+**Exemplo de resposta com enriquecimento usando Open-Meteo e ViaCEP:**
 ```json
 {
-  "bairro": "Centro",
-  "cidade": "São Paulo",
-  "estado": "SP",
-  "dataHora": "2025-05-27T19:02:00",
-  "descricao": "Apagão de 2h",
-  "condicaoClimatica": "céu limpo",
-  "temperatura": 26.4
+	"id": 1,
+	"cep": "01310-100",
+	"rua": "Avenida Paulista",
+	"bairro": "Bela Vista",
+	"cidade": "São Paulo",
+	"estado": "SP",
+	"dataHora": "2025-05-27T23:06:55.0941925",
+	"descricao": "Apagão completo por mais de 2 horas",
+	"condicaoClimatica": "Nublado",
+	"temperatura": 19.1
 }
 ```
 

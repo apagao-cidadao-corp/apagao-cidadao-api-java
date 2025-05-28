@@ -1,7 +1,6 @@
 package com.apagao.cidadao.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,23 +14,23 @@ public class Apagao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
+    private String cep;
 
-    @NotBlank(message = "O bairro é obrigatório.")
+    private String rua;
+
     private String bairro;
 
-    @NotBlank(message = "A cidade é obrigatória.")
     private String cidade;
 
-    @NotBlank(message = "O estado é obrigatório.")
     private String estado;
-
+    
     private LocalDateTime dataHora;
 
-    @NotBlank(message = "A descrição é obrigatória.")
     private String descricao;
 
     private String condicaoClimatica;
-    
+
     private Double temperatura;
 
     @PrePersist

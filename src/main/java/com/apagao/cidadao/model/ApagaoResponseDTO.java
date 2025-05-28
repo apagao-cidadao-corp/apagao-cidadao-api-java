@@ -12,6 +12,12 @@ public class ApagaoResponseDTO {
     @Schema(example = "1", description = "ID gerado para o apagão")
     private Long id;
 
+    @Schema(example = "00000-000")
+    private String cep;
+
+    @Schema(example = "Rua X")
+    private String rua;
+
     @Schema(example = "Centro")
     private String bairro;
 
@@ -27,6 +33,9 @@ public class ApagaoResponseDTO {
     @Schema(example = "Apagão total por mais de 2 horas")
     private String descricao;
 
+    @Schema(example = "Nublado")
     private String condicaoClimatica;
+
+    @Schema(example = "19.1")
     private Double temperatura;
 }
