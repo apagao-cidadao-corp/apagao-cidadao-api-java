@@ -159,6 +159,68 @@ src/
 
 ---
 
+
+## 📷 Evidências de Funcionamento
+
+### ▶️ Execução de compilação das dependências
+> Demonstração do terminal apresentando `Build Sucess` após executar `mvn clean compile`.
+
+![Execução da compilação no terminal](assets/compilacao.png)
+
+---
+
+### ▶️ Execução da aplicação
+> Demonstração do terminal com a aplicação rodando no `localhost:8080`.
+
+![Execução da aplicação no terminal](assets/execucao.png)
+
+---
+
+### 📘 Swagger UI – Documentação da API
+> Acesso e visualização das rotas documentadas com OpenAPI no Swagger.
+
+![Swagger - documentação da API](assets/swagger.png)
+
+---
+
+### 🔐 Login com JWT (Insomnia)
+> Autenticação bem-sucedida via `/auth/login`, com retorno do token JWT.
+
+![Insomnia - login com JWT](assets/token.png)
+
+---
+
+### 📩 Criação de Apagão com enriquecimento de dados (Insomnia)
+> Envio de requisição com CEP e descrição. A resposta inclui dados enriquecidos via ViaCEP e Open-Meteo.
+
+![Insomnia - criação de apagão com resposta enriquecida](assets/post-requisicao.png)
+
+---
+
+### 📩 Registros de Apagão com enriquecimento de dados (Insomnia)
+> Envio de requisição GET. A resposta inclui Registros de Apagão com enriquecimento de dados.
+
+![Insomnia - registros de apagão com enriquecimento de dados](assets/get-requisicao.png)
+
+---
+
+### 📄 Exemplo de resposta JSON enriquecida:
+```json
+{
+  "id": 1,
+  "cep": "01310-100",
+  "rua": "Avenida Paulista",
+  "bairro": "Bela Vista",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "dataHora": "2025-05-27T23:06:55",
+  "descricao": "Apagão completo por mais de 2 horas",
+  "condicaoClimatica": "Nublado",
+  "temperatura": 19.1
+}
+```
+
+
 ## 📄 Licença
 
 Projeto acadêmico desenvolvido para a FIAP - Global Solution 2025.
