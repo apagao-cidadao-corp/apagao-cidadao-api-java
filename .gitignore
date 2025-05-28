@@ -1,0 +1,49 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.class
+*.jar
+*.war
+*.ear
+*.swp
+*.tmp
+
+# Token ou configs locais
+*.env
+*.secret
+*.key
+*.pem
+
+# Arquivos gerados do H2
+*.mv.db
+*.h2.db
+
+# Arquivos de build e execução
+build/
+.gradle/
+.mvn/
+!mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot devtools
+.spring-boot-devtools.properties
