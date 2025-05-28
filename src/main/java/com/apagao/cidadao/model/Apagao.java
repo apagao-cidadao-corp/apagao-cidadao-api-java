@@ -30,6 +30,10 @@ public class Apagao {
     @NotBlank(message = "A descrição é obrigatória.")
     private String descricao;
 
+    private String condicaoClimatica;
+    
+    private Double temperatura;
+
     @PrePersist
     public void definirDataAtual() {
         this.dataHora = LocalDateTime.now();

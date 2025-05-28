@@ -16,6 +16,9 @@ public class ApagaoRequestDTO {
     @Schema(example = "Centro", description = "Nome do bairro onde ocorreu o apagão")
     private String bairro;
 
+    @NotBlank(message = "O cep é obrigatório.")
+    private String cep;
+
     @NotBlank(message = "A cidade é obrigatória.")
     @Schema(example = "São Paulo", description = "Nome da cidade")
     private String cidade;
@@ -30,4 +33,5 @@ public class ApagaoRequestDTO {
     @NotBlank(message = "A descrição é obrigatória.")
     @Schema(example = "Apagão total por mais de 2 horas", description = "Descrição adicional do ocorrido")
     private String descricao;
+
 }

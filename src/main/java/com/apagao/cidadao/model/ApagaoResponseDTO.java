@@ -26,4 +26,7 @@ public class ApagaoResponseDTO {
 
     @Schema(example = "Apagão total por mais de 2 horas")
     private String descricao;
+
+    private String condicaoClimatica;
+    private Double temperatura;
 }

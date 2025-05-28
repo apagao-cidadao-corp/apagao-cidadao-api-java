@@ -86,6 +86,43 @@ Acesse via:
 
 ---
 
+
+---
+
+## 🌐 Integrações com APIs Públicas
+
+O projeto realiza integração com duas APIs externas para enriquecimento automático dos dados dos apagões:
+
+### 📍 ViaCEP
+Utilizada para obter informações de localização (bairro, cidade, estado) a partir do **CEP informado** pelo usuário.
+
+### 🌦️ Open-Meteo
+Consulta em tempo real o **clima atual** (temperatura e condição climática por código) com base na geolocalização (latitude e longitude), usando a API gratuita da Open-Meteo, sem necessidade de chave de autenticação.
+
+### 🔄 Fluxo de enriquecimento:
+1. Usuário envia: bairro, cidade, estado e **CEP**
+2. A API do ViaCEP corrige e padroniza os dados de localização
+3. A OpenWeatherMap consulta o clima baseado na cidade e UF
+4. O apagão é salvo com:
+   - Cidade e estado corrigidos
+   - Temperatura
+   - Condição climática
+   - Data/hora atual
+
+**Exemplo de resposta com enriquecimento usando Open-Meteo:**
+```json
+{
+  "bairro": "Centro",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "dataHora": "2025-05-27T19:02:00",
+  "descricao": "Apagão de 2h",
+  "condicaoClimatica": "céu limpo",
+  "temperatura": 26.4
+}
+```
+
+
 ## ▶️ Como executar o projeto
 
 ```bash
