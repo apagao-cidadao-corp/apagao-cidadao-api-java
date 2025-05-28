@@ -3,7 +3,9 @@
 Este projeto é uma API RESTful desenvolvida com Java 17 e Spring Boot 3, cujo objetivo é permitir que usuários registrem e consultem relatos de **apagões de energia elétrica** por região, com foco em **monitoramento colaborativo**.
 
 ## 🧠 Autores
-
+ - Eduardo Akira Murata     - RM98713
+ - Wesley Souza de Oliveira - RM97874
+ - Deivison Pertel          - RM550803
 
 ---
 
@@ -100,7 +102,7 @@ Utilizada para obter informações de localização (bairro, cidade, estado) a p
 Consulta em tempo real o **clima atual** (temperatura e condição climática por código) com base na geolocalização (latitude e longitude), usando a API gratuita da Open-Meteo, sem necessidade de chave de autenticação.
 
 ### 🔄 Fluxo de enriquecimento:
-1. Usuário envia: bairro, cidade, estado e **CEP**
+1. Usuário envia: **CEP** e **Descrição**
 2. A API do ViaCEP corrige e padroniza os dados de localização
 3. A OpenWeatherMap consulta o clima baseado na cidade e UF
 4. O apagão é salvo com:
