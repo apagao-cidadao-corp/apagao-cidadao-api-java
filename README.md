@@ -195,6 +195,10 @@ src/
 
 ![Insomnia - criação de apagão com resposta enriquecida](assets/post-requisicao.png)
 
+Obs: Para fazer o Post é necessário passar um `Bearer Token`, com o Token gerado na autenticação. Caso contrário a chamada retornará um 403 - Forbiden
+
+![alt text](assets/forbiden.png)
+
 ---
 
 ### 📩 Registros de Apagão com enriquecimento de dados (Insomnia)
