@@ -3,9 +3,10 @@
 Este projeto é uma API RESTful desenvolvida com Java 17 e Spring Boot 3, cujo objetivo é permitir que usuários registrem e consultem relatos de **apagões de energia elétrica** por região, com foco em **monitoramento colaborativo**.
 
 ## 🧠 Autores
+ - Deivison Pertel          - RM550803
  - Eduardo Akira Murata     - RM98713
  - Wesley Souza de Oliveira - RM97874
- - Deivison Pertel          - RM550803
+
 
 ---
 
