@@ -1,4 +1,4 @@
-# Plataforma de Crowdsourcing para Mapear Apagões ⚡
+# Plataforma de Crowdsourcing para Mapear Apagões
 
 Este projeto é uma API RESTful desenvolvida com Java 17 e Spring Boot 3, cujo objetivo é permitir que usuários registrem e consultem relatos de **apagões de energia elétrica** por região, com foco em **monitoramento colaborativo**.
 
